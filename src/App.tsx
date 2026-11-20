@@ -36,7 +36,7 @@ function App() {
   const [cursorActive, setCursorActive] = useState(false);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setIntroVisible(false), 1250);
+    const timer = window.setTimeout(() => setIntroVisible(false), 7000);
     return () => window.clearTimeout(timer);
   }, []);
 
@@ -145,7 +145,7 @@ function App() {
     <section className="hero section" id="home">
       <div className="hero-copy">
         <div className="eyebrow"><span className="pulse"/> پروفایل شخصی <span className="hero-live">MAZIAR / DIGITAL PROFILE</span></div>
-        <p className="overline">سلام، من هستم</p>
+        
         <h1>{profile.name}<span className="gold">.</span></h1>
         <p className="hero-lead">{profile.intro}</p>
         <div className="hero-meta"><span>{profile.age}</span><i/> <span>{profile.location}</span></div>
@@ -175,7 +175,7 @@ function App() {
 
     <div className="closing-marquee" aria-hidden="true"><div className="marquee-track"><span>CURIOUS BY NATURE</span><i>✳</i><span>ALWAYS LEARNING</span><i>✳</i><span>OPEN TO NEW EXPERIENCES</span><i>✳</i><span>CURIOUS BY NATURE</span><i>✳</i><span>ALWAYS LEARNING</span><i>✳</i></div></div>
     <section className="contact-section" id="contact"><div className="section contact-inner"><div><span className="section-no">06 / SAY HELLO</span><h2>ارتباط‌های خوب<br/><em>از یک سلام شروع می‌شوند.</em></h2><p>برای گفت‌وگو، همکاری یا آشنایی بیشتر خوشحال می‌شوم در ارتباط باشیم.</p></div><div className="contact-links">
-      <a href="mailto:your-email@example.com"><Mail/> ایمیل <ExternalLink size={14}/></a><a href="https://t.me/your_username" target="_blank" rel="noreferrer"><Send/> تلگرام <ExternalLink size={14}/></a><a href="https://instagram.com/your_username" target="_blank" rel="noreferrer"><Camera/> اینستاگرام <ExternalLink size={14}/></a><a href="tel:+980000000000"><Phone/> تماس تلفنی <ExternalLink size={14}/></a>
+      <a href="mailto:your-email@example.com"><Mail/> ایمیل <ExternalLink size={14}/></a><a href="https://t.me/m8azi" target="_blank" rel="noreferrer"><Send/> تلگرام <ExternalLink size={14}/></a><a href="https://instagram.com/m8aziii" target="_blank" rel="noreferrer"><Camera/> اینستاگرام <ExternalLink size={14}/></a><a href="tel:+980000000000"><Phone/> تماس تلفنی <ExternalLink size={14}/></a>
     </div></div></section>
 
     <section className="signature-section" aria-label="امضای مازیار"><span className="signature-kicker">A PERSONAL SIGNATURE</span><div className="signature-word">MAZIAR<span>.</span></div><p>با کنجکاوی ادامه می‌دهم؛ با تجربه، رشد می‌کنم.</p><div className="signature-rule" /></section>
